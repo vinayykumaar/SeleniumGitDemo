@@ -35,5 +35,6 @@
 	<classpathentry kind="lib" path="C:/Vinay/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-tests.jar"/>
 	<classpathentry kind="lib" path="C:/Vinay/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-test-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Vinay/org.osgi.foundation-1.0.0.jar/org.osgi.foundation-1.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Vinay/extentreports-2.41.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

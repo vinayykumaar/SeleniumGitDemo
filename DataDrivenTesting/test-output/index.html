@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-ListenerSuite">
+              <span class="suite-name border-failed">ListenerSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Training_M5.06.15\AppData\Local\Temp\testng-eclipse--622615304\testng-customsuite.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-ListenerSuite">
+                    <span>C:\Vinay\GitRepos\DataDrivenTesting\src\POM\TestNGSuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="testlist-ListenerSuite">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="group-ListenerSuite">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="times-ListenerSuite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-ListenerSuite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-ListenerSuite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-ListenerSuite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,21 +91,59 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">5 methods, 2 failed,  1 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-ListenerSuite" class="hide-methods failed suite-ListenerSuite"> (hide)</a> <!-- hide-methods failed suite-ListenerSuite -->
+                      <a href="#" panel-name="suite-ListenerSuite" class="show-methods failed suite-ListenerSuite"> (show)</a> <!-- show-methods failed suite-ListenerSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-ListenerSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ListenerSuite" title="POM.TestForListenerDemo" hash-for-method="FailTest">FailTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ListenerSuite" title="POM.TestForListenerDemo" hash-for-method="SkipTest2">SkipTest2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-ListenerSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-ListenerSuite" class="hide-methods skipped suite-ListenerSuite"> (hide)</a> <!-- hide-methods skipped suite-ListenerSuite -->
+                      <a href="#" panel-name="suite-ListenerSuite" class="show-methods skipped suite-ListenerSuite"> (show)</a> <!-- show-methods skipped suite-ListenerSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-ListenerSuite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ListenerSuite" title="POM.TestForListenerDemo" hash-for-method="SkipTest">SkipTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-ListenerSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-ListenerSuite" class="hide-methods passed suite-ListenerSuite"> (hide)</a> <!-- hide-methods passed suite-ListenerSuite -->
+                      <a href="#" panel-name="suite-ListenerSuite" class="show-methods passed suite-ListenerSuite"> (show)</a> <!-- show-methods passed suite-ListenerSuite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-ListenerSuite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="POM.VerifyLogin_PgFactory" hash-for-method="f">f</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-ListenerSuite" title="POM.TestForListenerDemo" hash-for-method="Pass2Test">Pass2Test</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ListenerSuite" title="POM.TestForListenerDemo" hash-for-method="PassTest">PassTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-ListenerSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,117 +154,203 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-ListenerSuite" class="panel ListenerSuite">
+          <div class="suite-ListenerSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">POM.VerifyLogin_PgFactory</span>
+              <img src="failed.png"/>
+              <span class="class-name">POM.TestForListenerDemo</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="f">
-                  </a> <!-- f -->
-                  <span class="method-name">f</span>
+                  <a name="FailTest">
+                  </a> <!-- FailTest -->
+                  <span class="method-name">FailTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Paresh Rawal] but found [Akshay Kumar]
+	at POM.TestForListenerDemo.FailTest(TestForListenerDemo.java:20)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SkipTest2">
+                  </a> <!-- SkipTest2 -->
+                  <span class="method-name">SkipTest2</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Frog] but found [Prince]
+	at POM.TestForListenerDemo.SkipTest2(TestForListenerDemo.java:45)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-ListenerSuite-class-failed -->
+          <div class="suite-ListenerSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">POM.TestForListenerDemo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SkipTest">
+                  </a> <!-- SkipTest -->
+                  <span class="method-name">SkipTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TestForListenerDemo.SkipTest()[pri:0, instance:POM.TestForListenerDemo@23223dd8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ListenerSuite-class-skipped -->
+          <div class="suite-ListenerSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">POM.TestForListenerDemo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Pass2Test">
+                  </a> <!-- Pass2Test -->
+                  <span class="method-name">Pass2Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PassTest">
+                  </a> <!-- PassTest -->
+                  <span class="method-name">PassTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ListenerSuite-class-passed -->
+        </div> <!-- panel ListenerSuite -->
+        <div panel-name="test-xml-ListenerSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Training_M5.06.15\AppData\Local\Temp\testng-eclipse--622615304\testng-customsuite.xml</span>
+            <span class="header-content">C:\Vinay\GitRepos\DataDrivenTesting\src\POM\TestNGSuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
-  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;ListenerSuite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;POM.ListenerDemo&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;ListenerDemo1&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;POM.VerifyLogin_PgFactory&quot;/&gt;
+      &lt;class name=&quot;POM.TestForListenerDemo&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- ListenerDemo1 --&gt;
+&lt;/suite&gt; &lt;!-- ListenerSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-ListenerSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for ListenerSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">ListenerDemo1 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-ListenerSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for ListenerSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-ListenerSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for ListenerSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_ListenerSuite');
+function tableData_ListenerSuite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'f')
-data.setCell(0, 2, 'POM.VerifyLogin_PgFactory')
-data.setCell(0, 3, 29461);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 1, 'FailTest')
+data.setCell(0, 2, 'POM.TestForListenerDemo')
+data.setCell(0, 3, 13);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Pass2Test')
+data.setCell(1, 2, 'POM.TestForListenerDemo')
+data.setCell(1, 3, 2);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'PassTest')
+data.setCell(2, 2, 'POM.TestForListenerDemo')
+data.setCell(2, 3, 2);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'SkipTest2')
+data.setCell(3, 2, 'POM.TestForListenerDemo')
+data.setCell(3, 3, 1);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'SkipTest')
+data.setCell(4, 2, 'POM.TestForListenerDemo')
+data.setCell(4, 3, 0);
+window.suiteTableData['ListenerSuite']= { tableData: data, tableDiv: 'times-div-ListenerSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 29 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 18 ms</span>
+              <div id="times-div-ListenerSuite">
+              </div> <!-- times-div-ListenerSuite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-ListenerSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for ListenerSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-ListenerSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-ListenerSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">POM.VerifyLogin_PgFactory</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="chronological-class-name">POM.TestForListenerDemo</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">f</span>
-                <span class="method-start">9 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">FailTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PassTest</span>
+                <span class="method-start">18 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Pass2Test</span>
+                <span class="method-start">206 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">SkipTest2</span>
+                <span class="method-start">225 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
