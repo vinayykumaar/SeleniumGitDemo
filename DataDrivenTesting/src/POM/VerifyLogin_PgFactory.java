@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 
-@SuppressWarnings("deprecation")
+
 public class VerifyLogin_PgFactory extends ListenerDemoExtentReports {
 	WebDriver d;
 	Properties p;
@@ -28,7 +28,7 @@ public class VerifyLogin_PgFactory extends ListenerDemoExtentReports {
 	  }
 	
 	
-  @SuppressWarnings("deprecation")
+  
 @Test
   public void f() throws InterruptedException {
 	  
