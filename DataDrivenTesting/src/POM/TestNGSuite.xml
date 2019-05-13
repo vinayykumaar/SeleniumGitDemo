@@ -4,14 +4,21 @@
 <suite name  = "ListenerSuite" parallel="false">
 
 <listeners>
-<listener class-name="POM.ListenerDemo"/>
+<!--  <listener class-name="POM.ListenerDemo"/> -->
+<listener class-name="POM.ListenerDemoExtentReports"/>
 </listeners>
-
+<!--
 <test name="ListenerDemo1">
 <classes>
 <class name = "POM.TestForListenerDemo"/>
 </classes>
-</test>  <!-- Test 1 -->
+</test>  -->
+
+<test name="ListenerDemoReport1">
+<classes>
+<class name = "POM.VerifyLogin_PgFactory"/>
+</classes>
+</test>  <!-- Test 2 -->
 
 
 </suite>

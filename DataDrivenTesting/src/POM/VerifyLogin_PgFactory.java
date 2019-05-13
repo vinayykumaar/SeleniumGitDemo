@@ -12,7 +12,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 
 @SuppressWarnings("deprecation")
-public class VerifyLogin_PgFactory {
+public class VerifyLogin_PgFactory extends ListenerDemoExtentReports {
 	WebDriver d;
 	Properties p;
 	FileInputStream fi;
